@@ -1,5 +1,6 @@
+import './styles.css';
 const Home = () => {
-	return <div>Works</div>;
+	return <div className='container'>ola</div>;
 };
 
 export default Home;
