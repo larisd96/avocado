@@ -1,4 +1,11 @@
 .nav-bar {
 	display: flex;
+	margin: 3rem;
+	margin-left: 31rem;
+}
+
+.nav-bar-item {
+	text-decoration: none;
 	margin: 1rem;
+	color: black;
 }

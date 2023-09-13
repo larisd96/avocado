@@ -1,15 +1,25 @@
 import { Link } from 'react-router-dom';
 import './styles.css';
 
+const navbarItems = [
+	{ path: '/', name: 'Home' },
+	{ path: '/alimentos', name: 'Alimentos' },
+	{ path: '/calculadora', name: 'Calculadora' },
+	{ path: '/contato', name: 'Contato' },
+];
+// Map
 const Navbar = () => {
 	return (
 		<nav className='nav-bar'>
-			<Link to='/'>Home</Link>
-			<Link to='/alimentos'>Alimentos</Link>
-			<Link to='/calculadora'>Calculadora</Link>
-			<Link to='/contato'>Contato</Link>
+			{navbarItems.map(value => (
+				<Link className='nav-bar-item' key={value.name} to={value.path}>
+					{value.name}
+				</Link>
+			))}
 		</nav>
 	);
 };
+
+
 
 export default Navbar;
