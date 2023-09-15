@@ -6,6 +6,7 @@
 	align-items: center;
 	background-color: #f0f2ac;
 	border-radius: 2rem;
+	margin: auto;
 }
 .title {
 	display: flex;

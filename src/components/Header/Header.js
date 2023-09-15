@@ -1,9 +1,10 @@
 import './styles.css';
 
-const Header = () => {
+const Header = ({ children }) => {
 	return (
 		<div className='header'>
-			<img className='logo-header' src='/img/logo-header.png' alt='' />;
+			
+			<div>{children}</div>
 		</div>
 	);
 };

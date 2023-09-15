@@ -9,20 +9,19 @@ import Search from './components/Search/Search';
 import ButtonS from './components/Button/ButtonS';
 import Banner from './components/Banner/Banner';
 import Header from './components/Header/Header';
+import Card from './components/Card/Card';
 function App() {
 	return (
 		<section className='container'>
-			<Navbar />
-			<Header></Header>
+			<Header>
+				<Navbar />
+			</Header>
 			<Routes>
 				<Route exact path='/' element={<Home />} />
 				<Route path='/alimentos' element={<Alimentos />} />
 				<Route path='/calculadora' element={<Calculadoras />} />
 				<Route path='/contato' element={<Contato />} />
 			</Routes>
-			<Banner></Banner>
-			<Search></Search>
-			<ButtonS></ButtonS>
 		</section>
 	);
 }

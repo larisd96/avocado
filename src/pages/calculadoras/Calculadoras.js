@@ -1,5 +1,5 @@
 const Calculadoras = () => {
-	return <div>Alimentos</div>;
+	return <div></div>;
 };
 
 export default Calculadoras;

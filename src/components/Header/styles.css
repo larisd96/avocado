@@ -1,18 +1,9 @@
-.header{
-    display: flex;
-    flex-direction: column;
-	align-items: center;
-	margin: 2rem 10rem;
-    background-color: #E8FF8B;
-    border-radius: 3rem;
-    
-   
-}
-
-
-.logo-header {
-    height: 200px; ;
-    width:200px ;
-    margin-right: 50rem;
-    margin-bottom: 7rem;
+.header {
+	display: flex;
+	background-color: #e8ff8b;
+	width: 100%;
+	height: 4rem;
+	border-radius: 2rem 2rem 0rem 0rem;
+	box-sizing: content-box;
+	margin-bottom: 1rem;
 }
