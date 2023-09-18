@@ -1,11 +1,13 @@
 .nav-bar {
 	display: flex;
+	justify-content:space-between;
+	margin-left: 25rem;
 	
-	
+ 	
 }
 
 .nav-bar-item {
 	text-decoration: none;
-	margin: 1rem;
+	margin: 2rem;
 	color: black;
 }

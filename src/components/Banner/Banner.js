@@ -1,11 +1,15 @@
 import './styles.css';
 const Banner = () => {
 	return (
-		<div className='box-green'>
-			<h1 className='title'>UM JEITO FÁCIL</h1>
-			<h2 className='title-2'>DE SE MANTER </h2>
-			<h1 className='title-3'>SAUDÁVEL</h1>
-			<img className='avocado' src='/img/logo-avocado.png' alt='' />
+		<div className='box'>
+			<h1 className='title-1'> Mantenha-se Saudável e Conquiste seus Objetivos com a Nutrição Certa ! </h1>
+
+			<img className='photo-salad' src='/img/salad-pepino.png' alt='Salada' />
+			<p className='text-about'>
+				O site oferece informações sobre valores nutricionais, contagem de calorias, calculadora de Índice de Massa Corporal (IMC) e taxa basal (TMB), uma ferramenta valiosa para ajudar as pessoas a
+				entenderem e monitorarem sua saúde.
+			</p>
+			
 		</div>
 	);
 };

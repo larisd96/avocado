@@ -1,10 +1,12 @@
+import Logo from '../Logo/Logo';
+
 import './styles.css';
 
 const Header = ({ children }) => {
 	return (
 		<div className='header'>
-			
-			<div>{children}</div>
+			<Logo />
+			<div className='header-children'>{children}</div>
 		</div>
 	);
 };

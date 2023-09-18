@@ -1,44 +1,22 @@
-.box-green {
+.box {
 	display: flex;
-	height: 300px;
-	width: 1000px;
-	flex-direction: column;
-	align-items: center;
-	background-color: #f0f2ac;
-	border-radius: 2rem;
-	margin: auto;
+	justify-content: space-around;
+	margin-top: 175px;
 }
-.title {
-	display: flex;
-	font-size: 1.5rem;
-	padding: 2rem;
-	margin-top: 2rem;
-	margin-right: 30rem;
-	background-color: #d9d9d9;
-	color: #ffff;
+.title-1{
+font-size: 50px;
+text-align: center;
+align-items: center;
 }
 
-.title-2 {
-	display: flex;
-	font-size: 1.5rem;
-	padding: 2rem;
-	margin-top: -2rem;
-	margin-right: 23rem;
-	background-color: #d9d9d9;
-	color: #ffff;
-}
-.title-3 {
-	font-size: 2rem;
-	padding: 1rem;
-	margin-top: -1rem;
-	margin-right: 16rem;
-	background-color: #d9d9d9;
-	color: #254019;
+.photo-salad {
+	width: 50%;
+ align-items: center;
+
+
 }
 
-.avocado {
-	height: 600px;
-	width: 549px;
-	margin-top: -17rem;
-	margin-left: 24rem;
+.text-about p{
+font-size: 15px;
+
 }

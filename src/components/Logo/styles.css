@@ -1,0 +1,21 @@
+
+.logo {
+    margin: 22px;
+
+    
+}
+.text-logo {
+position: absolute;
+color: #F2BC79;
+font-size: 33px;
+text-shadow: #373431;
+
+}
+
+
+.photo-avocado {
+width: 90px;
+height: auto;
+margin-top: -23px;
+margin-left:10rem ;
+}

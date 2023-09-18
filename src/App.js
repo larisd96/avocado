@@ -10,9 +10,10 @@ import ButtonS from './components/Button/ButtonS';
 import Banner from './components/Banner/Banner';
 import Header from './components/Header/Header';
 import Card from './components/Card/Card';
+
 function App() {
 	return (
-		<section className='container'>
+		<section>
 			<Header>
 				<Navbar />
 			</Header>
