@@ -6,9 +6,7 @@
 	box-sizing: content-box;
 	margin-bottom: 1rem;
 	box-shadow: 0px 4px 7px 4px #bad8ba;
-	position: fixed;
 	width: 100%;
-	top: 0%;
 }
 
 .header-children {

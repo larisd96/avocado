@@ -1,0 +1,11 @@
+
+
+.Calculator {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+ 
+}

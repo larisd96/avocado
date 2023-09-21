@@ -12,7 +12,7 @@ import Footer from './components/Footer/Footer';
 
 function App() {
 	return (
-		<section>
+		<main className='container'>
 			<Header>
 				<Navbar />
 			</Header>
@@ -21,13 +21,10 @@ function App() {
 				<Route path='/alimentos' element={<Alimentos />} />
 				<Route path='/calculadora' element={<Calculadoras />} />
 				<Route path='/contato' element={<Contato />} />
-				
 			</Routes>
-			<Footer>
 
-				
-			</Footer>
-		</section>
+			<Footer></Footer>
+		</main>
 	);
 }
 
