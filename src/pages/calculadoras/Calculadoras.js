@@ -1,5 +1,6 @@
+import './styles.css';
 const Calculadoras = () => {
-	return <div></div>;
+	return
 };
 
 export default Calculadoras;

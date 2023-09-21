@@ -7,9 +7,8 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Search from './components/Search/Search';
 import ButtonS from './components/Button/ButtonS';
-import Banner from './components/Banner/Banner';
 import Header from './components/Header/Header';
-import Card from './components/Card/Card';
+import Footer from './components/Footer/Footer';
 
 function App() {
 	return (
@@ -22,7 +21,12 @@ function App() {
 				<Route path='/alimentos' element={<Alimentos />} />
 				<Route path='/calculadora' element={<Calculadoras />} />
 				<Route path='/contato' element={<Contato />} />
+				
 			</Routes>
+			<Footer>
+
+				
+			</Footer>
 		</section>
 	);
 }

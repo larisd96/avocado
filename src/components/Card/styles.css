@@ -1,26 +1,22 @@
 .card {
-	display: flex;
-	margin: 12rem;
-	margin-left: 4rem;
+	width: 300px;
+	margin: 0 7rem;
+	background-color: #ffff;
+	display: inline-block;
+	box-shadow: #010101;
 }
 
 .photo-food {
-	height: 250px;
-	width: 250px;
-	margin-right: 2rem;
+	width: 256px;
+	height: 350px;
 }
 
-.content-cal {
-	flex-direction: column;
-	margin-top: 3rem;
-	margin-right: 25rem;
-}
 .title-cal {
-	font-size: 20px;
+	padding: 22px;
 	margin-bottom: 1rem;
+	text-align: center;
 }
 .text-cal {
-	flex-direction: column;
-	font-size: 15px;
-	text-align: justify;
+	font-size: 14px;
+	text-align: left;
 }
