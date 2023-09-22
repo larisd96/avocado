@@ -3,21 +3,23 @@
 	justify-content: space-around;
 	margin-top: 175px;
 }
-.title-1{
-font-size: 50px;
-text-align: center;
-align-items: center;
+.banner-title {
+	font-size: 50px;
+	align-items: center;
+	margin-bottom: 6rem;
 }
 
 .photo-salad {
-	width: 50%;
- align-items: center;
-
-
+	width: 45%;
+	align-items: center;
 }
 
 .text-sobre {
-font-size: 15px;
-margin-bottom: -30rem;
+	font-size: 15px;
+	margin-top: -30rem;
+}
 
+.banner-group-text {
+	display: flex;
+	flex-direction: column;
 }

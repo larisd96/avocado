@@ -1,5 +1,6 @@
 import './styles.css';
 import { useForm } from 'react-hook-form';
+import { FaBeer } from 'react-icons/fa';
 
 const Form = () => {
 	const {
@@ -11,14 +12,15 @@ const Form = () => {
 
 	return (
 		<div className='container'>
-			<form className='Calculator' action=''>
-				<label>Peso em KG :</label>
+			<form className='calculator' action=''>
+				<label className='title-cal'>Calculadora IMC</label>
+				<label>PESO:</label>
 				<input {...register('peso', { required: true })} />
-				<label>Altura em CM</label>
+				<label>ALTURA: </label>
 				<input {...register('Altura', { required: true })} />
-				<label>Idade em anos</label>
+				<label>IDADE:</label>
 				<input {...register('idade', { required: true })} />
-				<button type='Calcular'>Calcular</button>
+				<button type='Calcular-button'>Calcular</button>
 			</form>
 		</div>
 	);

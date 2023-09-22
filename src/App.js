@@ -16,12 +16,14 @@ function App() {
 			<Header>
 				<Navbar />
 			</Header>
-			<Routes>
-				<Route exact path='/' element={<Home />} />
-				<Route path='/alimentos' element={<Alimentos />} />
-				<Route path='/calculadora' element={<Calculadoras />} />
-				<Route path='/contato' element={<Contato />} />
-			</Routes>
+			<section className='content'>
+				<Routes>
+					<Route exact path='/' element={<Home />} />
+					<Route path='/alimentos' element={<Alimentos />} />
+					<Route path='/calculadora' element={<Calculadoras />} />
+					<Route path='/contato' element={<Contato />} />
+				</Routes>
+			</section>
 
 			<Footer></Footer>
 		</main>

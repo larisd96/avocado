@@ -1,12 +1,18 @@
-.title-site{
-	margin-top: 5rem;
+.home-title{
+	margin-top: 8rem;
+	margin-left: 6rem;
 	justify-content: center;
 	font-size: 30px;
+
 }
+
+
 .box-card {
 	justify-content: center;
 	display: flex;
 	margin-top: 90px;
 	width: 100%;
 	align-items: center;
+	margin-left: 1rem;
+
 }

@@ -3,10 +3,10 @@ import './styles.css';
 const Card = ({ image, cardHeader, text }) => {
 	return (
 		<div className='card'>
-			<img className='photo-food' src={image} alt='' />
-			<div className='content-cal'>
-				<h3 className='title-cal'>{cardHeader}</h3>
-				<p className='text-cal'>{text}</p>
+			<img className='card-photo-food' src={image} alt='' />
+			<div className='card-content'>
+				<h3 className='card-title'>{cardHeader}</h3>
+				<p className='card-text'>{text}</p>
 			</div>
 		</div>
 	);

@@ -1,11 +1,25 @@
+.calculator {
+	display: flex;
+	height: 340px;
+	width: 250px;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 1rem;
+	margin-top: -22rem;
+	margin-left: 60rem;
+	background-color: #f0f2ac;
+	border-radius: 1rem;
+}
 
-
-.Calculator {
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 2rem;
- 
+.title-cal {
+	background-color: #eef277;
+	width: 251px;
+}
+.calcular-button {
+	border: none;
+	background-color: #eef277;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 1rem;
 }

@@ -1,22 +1,28 @@
 .card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 300px;
 	margin: 0 7rem;
-	background-color: #ffff;
-	display: inline-block;
 	box-shadow: #010101;
 }
 
-.photo-food {
-	width: 256px;
-	height: 350px;
+.card-content {
+	display: flex;
+	flex-direction: column;
 }
 
-.title-cal {
+.card-photo-food {
+	height: 200px;
+}
+
+.card-title {
+	background-color: #eef277;
 	padding: 22px;
 	margin-bottom: 1rem;
 	text-align: center;
 }
-.text-cal {
+.card-text {
 	font-size: 14px;
-	text-align: left;
+	text-align: center;
 }
