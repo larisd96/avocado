@@ -12,14 +12,21 @@
 	border-radius: 1rem;
 }
 
-.title-cal {
-	background-color: #eef277;
+.calculator-title {
+	display: flex;
 	width: 251px;
+	height: 30px;
+	justify-content: center;
+	font-weight: bold;
 }
 .calcular-button {
 	border: none;
 	background-color: #eef277;
 	align-items: center;
-	justify-content: space-between;
+	width: 200px;
+	height: 30px;
 	border-radius: 1rem;
+	border: none;
+	font-weight: bold;
+	cursor: pointer;
 }

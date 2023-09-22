@@ -12,15 +12,15 @@ const Form = () => {
 
 	return (
 		<div className='container'>
-			<form className='calculator' action=''>
-				<label className='title-cal'>Calculadora IMC</label>
+			<form className='calculator'>
+				<label className='calculator-title '>Calculadora IMC</label>
 				<label>PESO:</label>
 				<input {...register('peso', { required: true })} />
 				<label>ALTURA: </label>
 				<input {...register('Altura', { required: true })} />
 				<label>IDADE:</label>
 				<input {...register('idade', { required: true })} />
-				<button type='Calcular-button'>Calcular</button>
+				<button  className='calcular-button' type='Calcular'>Calcular</button>
 			</form>
 		</div>
 	);

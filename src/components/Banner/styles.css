@@ -14,12 +14,13 @@
 	align-items: center;
 }
 
-.text-sobre {
-	font-size: 15px;
-	margin-top: -30rem;
-}
-
 .banner-group-text {
 	display: flex;
 	flex-direction: column;
+}
+.banner-about {
+	font-size: 25px;
+	font-style: italic;
+	justify-content: center;
+	font-weight: 200;
 }

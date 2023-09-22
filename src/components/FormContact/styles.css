@@ -34,3 +34,10 @@ textarea {
 	font-weight: bold;
 	cursor: pointer;
 }
+
+span {
+	color: red;
+	font-size: 13px;
+	position: absolute;
+	margin-top: 40px;
+}
