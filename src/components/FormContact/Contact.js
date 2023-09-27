@@ -8,7 +8,8 @@ const schema = yup
 	.object({
 		name: yup.string().required('O nome é obrigatório!'),
 		email: yup.string().email('digite um email válido').required('O email é obrigatório!'),
-		phone: yup.number('+351').min(12).integer().required('O phone é obrigatório!'),
+		phone: yup.number('+351').required('O phone é obrigatório!'),
+		message: yup.string().required('A mensagem é obrigatório!'),
 	})
 	.required();
 
@@ -26,17 +27,27 @@ const Contact = () => {
 
 	return (
 		<form className='contact-content' onSubmit={handleSubmit(onSubmitn)}>
-			<label className='form-contact'>Nome:</label>
-			<input {...register('name', { required: true })} />
-			{errors.name && <span>{errors.name?.message}</span>}
-			<label className='form-contact'>Email: </label>
-			<input {...register('email', { required: true })} 
-			/>
-			<label className='form-contact'>Phone:</label>
-			<input {...register('phone', { required: true })} />
-			<label className='form-contact'>Mensagem:</label>
-			<textarea {...register('Mensagem', { required: true })} />
+			<label className='form-contact'>
+				Nome:
+				<input {...register('name', { required: true })} />
+				<span>{errors.name?.message}</span>
+			</label>
+			<label className='form-contact'>
+				Email:
+				<input {...register('email', { required: true })} />
+				<span>{errors.email?.message}</span>
+			</label>
+			<label className='form-contact'>
+				Phone:
+				<input {...register('phone', { required: true })} />
+				<span>{errors.phone?.message}</span>
+			</label>
 
+			<label className='form-contact'>
+				Mensagem:
+				<span>{errors.message?.message}</span>
+				<textarea {...register('message', { required: true })} />
+			</label>
 			<button className='contact-button' type='enviar-button'>
 				Enviar
 			</button>
