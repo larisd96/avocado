@@ -25,7 +25,8 @@ function App() {
 				</Routes>
 			</section>
 
-			<Footer></Footer>
+			<Footer>
+			</Footer>
 		</main>
 	);
 }

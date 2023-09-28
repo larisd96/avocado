@@ -1,16 +1,31 @@
-.h1 {
-	justify-content: center;
-	
+.calculator-imc {
+
+	margin-top: 2rem;
+		line-height: 2rem;
 }
-.p {
-	justify-content: center;
-	margin-top: 7rem;
+
+
+.calculator-about-imc {
+margin-top: 2rem;
+
 }
+
 
 .photo-fitness {
 	height: 300px;
 	margin-top: 8rem;
 	margin-left:15rem;
+}
+
+
+
+.calculator-basal {
+margin-top: 4rem;
+
+}
+.calculator-about-basal {
+	margin-top: 2rem;
+	line-height: 2rem;
 }
 
 .photo-halter {
