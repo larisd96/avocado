@@ -6,7 +6,6 @@ import Contato from './pages/contato/Contato';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Search from './components/Search/Search';
-import ButtonS from './components/Button/ButtonS';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
