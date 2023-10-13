@@ -6,8 +6,7 @@
 	flex-direction: column;
 	gap: 3rem;
 	padding: 1rem;
-	margin-top: -22rem;
-	margin-left: 60rem;
+
 	background-color: #f0f2ac;
 	border-radius: 1rem;
 }
@@ -29,5 +28,4 @@
 	border: none;
 	font-weight: bold;
 	cursor: pointer;
-	
 }

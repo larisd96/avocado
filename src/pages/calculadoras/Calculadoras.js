@@ -9,8 +9,10 @@ const Calculadoras = () => {
 				O IMC é uma medida comum usada para avaliar se uma pessoa está em um peso saudável. Uma calculadora de IMC permitiria aos usuários inserir sua altura e peso e receber uma classificação que
 				indica se estão abaixo do peso, com peso saudável, com sobrepeso ou obesos.
 			</p>
-			<img className='photo-fitness' src='/img/personal.svg' alt='Personal' />
-			<FormImc />
+			<div className='calculator-imc-container'>
+				<img className='photo-fitness' src='/img/personal.svg' alt='Personal' />
+				<FormImc />
+			</div>
 			<div className='calculator-basal'>
 				<h1>Calcule sua Taxa Metabolica Basal</h1>
 				<p className='calculator-about-basal'>
@@ -25,8 +27,11 @@ const Calculadoras = () => {
 					como genética, metabolismo individual e saúde geral, também podem influenciar o gasto calórico de uma pessoa. Portanto, é importante consultar um profissional de saúde ou nutricionista para
 					obter uma estimativa precisa e personalizada das necessidades calóricas.
 				</p>
+				<div className='calculator-basal-container'>
+
 				<img className='photo-halter' src='/img/halter-fitness.png' alt='' />
 				<FormBasal />
+				</div>
 			</div>
 		</div>
 	);

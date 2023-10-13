@@ -6,11 +6,11 @@
 	flex-direction: column;
 	gap: 2rem;
 	padding: 2em;
-	margin-top: -24rem;
-	margin-left: 60rem;
 	background-color: #f0f2ac;
 	border-radius: 1rem;
 }
+
+
 
 .basal-select {
 	width: 90px;

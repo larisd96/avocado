@@ -1,6 +1,7 @@
 import './styles.css';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+import Nutrition from '../../components/Nutrition/Nutrition';
 
 const Alimentos = () => {
 	const baseUrl = 'https://api.edamam.com/api/food-database/v2/parser';
@@ -51,22 +52,14 @@ const Alimentos = () => {
 							<p>Nenhum resultado foi encontrado ! </p>
 						</div>
 					) : (
-						<ul className='api-list'>
+						<ul className='food-list'>
 							{data.map((item, index) => (
-								<li className='api-card' key={index}>
-									<h2 className='api-label'>{item.food.label}</h2>
-									<img className='api-photo' src={item.food.image} alt='Image-food' />
-									<div className='content-values'>
-										<h2 className='text-names'>Valor energetico: </h2>
-										<p className='text-values'>{item.food.nutrients.ENERC_KCAL} kcal</p>
-										<h2>Carboidratos:</h2>
-										<p>{item.food.nutrients.CHOCDF} Gramas</p>
-										<h2>Gorduras:</h2>
-										<p>{item.food.nutrients.FAT} Gramas</p>
-										<h2>Fibra:</h2>
-										<p>{item.food.nutrients.FIBTG} Gramas</p>
-										<h2>Proteína:</h2>
-										<p>{item.food.nutrients.PROCNT} Gramas</p>
+								<li className='food-card' key={index}>
+									<h2>{item.food.label}</h2>
+									<div className='food-details'>
+										<img className='food-detail-photo' src={item.food.image ? item.food.image : '/img/placeholderimg.jpeg'} alt='Image-food' />
+
+										<Nutrition nutrients={item.food.nutrients} />
 									</div>
 								</li>
 							))}

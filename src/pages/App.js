@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Switch, Route, Link, Routes } from 'react-router-dom';
-import Home from './pages/home/Home';
-import Alimentos from './pages/alimentos/Alimentos';
-import Calculadoras from './pages/calculadoras/Calculadoras';
-import Contato from './pages/contato/Contato';
+import Home from './home/Home';
+import Alimentos from './alimentos/Alimentos';
+import Calculadoras from './calculadoras/Calculadoras';
+import Contato from './contato/Contato';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Search from './components/Search/Search';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import Navbar from '../components/Navbar/Navbar';
+import Search from '../components/Search/Search';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 
 function App() {
 	return (
