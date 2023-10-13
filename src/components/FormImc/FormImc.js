@@ -1,9 +1,23 @@
 import './styles.css';
 import { useForm, Controller } from 'react-hook-form';
-import { FaBeer } from 'react-icons/fa';
+
+import { yupResolver } from '@hookform/resolvers/yup';
+
+import * as yup from 'yup';
+
+const schema = yup.object().shape({
+	peso: yup.number().required(),
+	altura: yup.number().required(),
+});
 
 const FormImc = () => {
-	const { handleSubmit, control, watch, formState } = useForm();
+	const {
+		handleSubmit,
+		control,
+		watch,
+		formState: { errors },
+	} = useForm({ resolver: yupResolver(schema) });
+
 	const onSubmit = data => {
 		const alturaMetros = data.altura / 100;
 		const imc = (data.peso / (alturaMetros * alturaMetros)).toFixed(2);
@@ -16,20 +30,20 @@ const FormImc = () => {
 				<h1 className='calculator-title '>Calculadora IMC</h1>
 				<div>
 					<label htmlFor='peso'>PESO (kg):</label>
-					<Controller name='peso' control={control} defaultValue='' rules={{ required: 'Campo obrigatório' }} render={({ field }) => <input {...field} type='number'></input>}></Controller>
+					<Controller name='peso' control={control} defaultValue='' render={({ field }) => <input {...field} type='number'></input>}></Controller>
+					{errors.altura && <span className='imc-span'> O peso é obrigartório ! </span>}
 				</div>
 
 				<div>
 					<label htmlFor='altura'>ALTURA (cm):</label>
-					<Controller name='altura' control={control} defaultValue='' rules={{ required: 'Campo obrigatório' }} render={({ field }) => <input {...field} type='number'></input>}></Controller>
+					<Controller name='altura' control={control} defaultValue='' render={({ field }) => <input {...field} type='number'></input>}></Controller>
+					{errors.peso && <span className='imc-span'> A altura é obrigatória ! </span>}
 				</div>
 
 				<button className='calcular-button' type='Calcular'>
 					Calcular IMC
 				</button>
 			</form>
-			{formState.errors.peso && <span>{formState.errors.peso.message}</span>}
-			{formState.errors.altura && <span>{formState.errors.altura.message}</span>}
 		</div>
 	);
 };

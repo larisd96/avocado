@@ -1,7 +1,6 @@
 .content-food {
 	display: flex;
 	flex-direction: column;
-
 }
 
 .food-box {
@@ -30,29 +29,23 @@
 	cursor: pointer;
 }
 
-.content-result {
-
-flex-direction: column;
-	width: px;
-	align-items: center;
-	justify-content: center;
-}
-
 .api-list {
 	display: flex;
 	flex-direction: column;
-    margin-top: 1rem;
+	margin-top: 1rem;
 	list-style-type: none;
 	gap: 2rem;
 	padding: 1rem;
+	align-items: center;
 }
 
 .api-card {
 	display: flex;
-	width: 100%;
+	width: 800px;
 	background-color: #edefcb;
 	padding: 2rem;
 	gap: 1rem;
+	flex-direction: column;
 }
 .api-photo {
 	display: flex;
@@ -63,20 +56,19 @@ flex-direction: column;
 
 .content-values {
 	display: flex;
-	align-items: center;
+	align-items: start;
 	background-color: #ffff;
-	height: 500px;
-	width: 200px;
+	height: 400px;
+	width: 300px;
 	gap: 1rem;
 	padding: 2rem;
 	border-radius: 1rem;
 	flex-direction: column;
-
-}
-.text-values{
-display:flex;
-
-
+	border: 2px solid black;
+	margin-top: -14rem;
+	margin-left: 25rem;
 }
 
-
+.api-label {
+	font-size: 1.4rem;
+}

@@ -45,16 +45,16 @@ const Alimentos = () => {
 			{loading ? (
 				<div>Loading...</div>
 			) : (
-				<div className='content-result'>
+				<div className='content-error'>
 					{empty ? (
 						<div>
-							<p>Nenhum resultado foi encontrado</p>
+							<p>Nenhum resultado foi encontrado ! </p>
 						</div>
 					) : (
 						<ul className='api-list'>
 							{data.map((item, index) => (
 								<li className='api-card' key={index}>
-									<h1 className='api-label'>{item.food.label}</h1>
+									<h2 className='api-label'>{item.food.label}</h2>
 									<img className='api-photo' src={item.food.image} alt='Image-food' />
 									<div className='content-values'>
 										<h2 className='text-names'>Valor energetico: </h2>
