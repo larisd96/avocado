@@ -5,8 +5,10 @@ const Contato = () => {
 		<div>
 			<h1>Entre em contato conosco</h1>
 			<p>Para sugestões de melhorias da plataforma ou duvidas. </p>
-			<img className='photo-contact' src='/img/Contact.png' alt='' />
-			<Contact></Contact>
+			<div className='contact-container'>
+				<img className='photo-contact' src='/img/Contact.png' alt='' />
+				<Contact></Contact>
+			</div>
 		</div>
 	);
 };

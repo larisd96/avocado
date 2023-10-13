@@ -1,6 +1,7 @@
 import './styles.css';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+import SyncLoader from 'react-spinners/SyncLoader';
 import Nutrition from '../../components/Nutrition/Nutrition';
 
 const Alimentos = () => {
@@ -44,11 +45,13 @@ const Alimentos = () => {
 				</button>
 			</div>
 			{loading ? (
-				<div>Loading...</div>
+				<div>
+					<SyncLoader color='#36d7b7' />
+				</div>
 			) : (
-				<div className='content-error'>
+				<>
 					{empty ? (
-						<div>
+						<div className='content-error'>
 							<p>Nenhum resultado foi encontrado ! </p>
 						</div>
 					) : (
@@ -65,7 +68,7 @@ const Alimentos = () => {
 							))}
 						</ul>
 					)}
-				</div>
+				</>
 			)}
 		</div>
 	);
