@@ -40,7 +40,7 @@ const Blog = () => {
 				<div className='blog__wrapper'>
 					<div className='blog__header'>
 						<h2>
-							just keep <Link to={`/create`}>posting...</Link>
+							Aguarde <Link to={`/create`}>Publicação</Link>
 						</h2>
 					</div>
 

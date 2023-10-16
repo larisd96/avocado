@@ -34,32 +34,32 @@ const PostForm = ({ action, id, title, body, onTitleChange, onBodyChange, onSubm
 		<section className='contacts'>
 			<div className='contacts__wrapper'>
 				<form onSubmit={handleSubmit} className='contacts__form'>
-					<h3> {action === 'update' ? 'Update Post' : action === 'delete' ? 'Delete Post' : 'Create Post'}</h3>
+					<h3> {action === 'update' ? 'Update Post' : action === 'delete' ? 'Deletar Post' : 'Escreva uma publicação'}</h3>
 					<div className='contacts__input'>
-						<label>Title</label>
+						<label placeholder='Título'>Título</label>
 						<input type='text' value={title} onChange={e => onTitleChange(e.target.value)} required />
 					</div>
 					<div className='contacts__input'>
-						<label>Body</label>
+						<label>Escreva o texto</label>
 						<textarea value={body} onChange={e => onBodyChange(e.target.value)} required />
 					</div>
 					<div className='contacts__input'>
 						{action === 'delete' ? (
 							<>
 								<button className='form__btns' type='button' onClick={onSubmit}>
-									Delete
+									Excluir
 								</button>
 								<button className='form__btns' type='button' onClick={() => navigate('/')}>
-									Cancel
+									Cancela
 								</button>
 							</>
 						) : (
 							<>
-								<button className='form__btns' type='submit'>
-									{action === 'update' ? 'Update' : 'Submit'}
+								<button className='form__btns' type='submeter'>
+									{action === 'update' ? 'Update' : 'Submeter'}
 								</button>
 								<button className='form__btns' type='button' onClick={() => navigate('/')}>
-									Cancel
+									Cancela
 								</button>
 							</>
 						)}
