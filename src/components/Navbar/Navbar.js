@@ -6,6 +6,7 @@ const navbarItems = [
 	{ path: '/alimentos', name: 'Alimentos' },
 	{ path: '/calculadora', name: 'Calculadora' },
 	{ path: '/contato', name: 'Contato' },
+	{ path: '/blog', name: 'Blog' },
 ];
 // Map
 const Navbar = () => {

@@ -1,0 +1,14 @@
+{
+	"posts": [
+		{
+			"id": 2,
+			"title": "Componentes em React",
+			"body": "Os componentes são o coração do React. Aprenda como criar componentes reutilizáveis e eficientes."
+		},
+		{
+			"id": 3,
+			"title": "Estado e Ciclo de Vida",
+			"body": "Entenda o estado do componente e o ciclo de vida para construir aplicações reativas."
+		}
+	]
+}
