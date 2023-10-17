@@ -17,10 +17,8 @@
 }
 
 .form__btns {
-	border: none;
-	background-color: #EEF277;
-	border-radius: 1rem;
-	width: 100px;
-	height: 40px;
-    flex-grow: 1rem;
+	display: flex;
+	gap: 8px;
+	align-self: center;
+	margin-top: 1rem;
 }

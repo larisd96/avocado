@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import { FaBeer } from 'react-icons/fa';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import Button from '../Button/Button';
 
 const schema = yup
 	.object({
@@ -48,9 +49,9 @@ const Contact = () => {
 				<span>{errors.message?.message}</span>
 				<textarea {...register('message', { required: true })} />
 			</label>
-			<button className='contact-button' type='enviar-button'>
+			<Button>
 				Enviar
-			</button>
+			</Button>
 		</form>
 	);
 };

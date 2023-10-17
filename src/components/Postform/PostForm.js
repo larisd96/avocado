@@ -2,6 +2,7 @@ import './styles.css';
 
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import Button from '../Button/Button';
 
 const PostForm = ({ action, id, title, body, onTitleChange, onBodyChange, onSubmit }) => {
 	const navigate = useNavigate();
@@ -44,23 +45,17 @@ const PostForm = ({ action, id, title, body, onTitleChange, onBodyChange, onSubm
 					</div>
 					<div className='contacts__input'>
 						{action === 'delete' ? (
-							<>
-								<button className='form__btns' type='button' onClick={onSubmit}>
+							<div className='form__btns'>
+								<Button type='button' onClick={onSubmit}>
 									Excluir
-								</button>
-								<button className='form__btns' type='button' onClick={() => navigate('/blog')}>
-									Cancela
-								</button>
-							</>
+								</Button>
+								<Button onClick={() => navigate('/blog')}>Cancela</Button>
+							</div>
 						) : (
-							<>
-								<button className='form__btns' type='submeter'>
-									{action === 'update' ? 'Update' : 'Submeter'}
-								</button>
-								<button className='form__btns' type='button' onClick={() => navigate('/blog')}>
-									Cancela
-								</button>
-							</>
+							<div className='form__btns'>
+								<Button>{action === 'update' ? 'Update' : 'Submeter'}</Button>
+								<Button onClick={() => navigate('/blog')}>Cancela</Button>
+							</div>
 						)}
 					</div>
 				</form>

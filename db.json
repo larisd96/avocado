@@ -14,6 +14,11 @@
       "id": 3,
       "title": "bem-estar físico",
       "body": "O bem-estar físico envolve cuidar do nosso corpo através de uma alimentação saudável, exercícios regulares, sono adequado e evitar comportamentos prejudiciais, como o tabagismo e o consumo excessivo de álcool. Manter um peso saudável, ter energia para as atividades diárias e estar em boas condições físicas são aspectos essenciais do bem-estar físico."
+    },
+    {
+      "title": "Bem-estar social:",
+      "body": "O bem-estar social diz respeito ao nosso relacionamento com os outros e à nossa integração na sociedade. Ter uma rede de apoio, amigos e familiares em quem podemos confiar é essencial para o bem-estar social. Além disso, contribuir para a comunidade, participar de atividades sociais e se envolver em ações de solidariedade podem aumentar nossa sensação de pertencimento e significado.",
+      "id": 4
     }
   ]
 }

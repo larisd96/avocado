@@ -1,6 +1,6 @@
 import './styles.css';
 import { useForm, Controller } from 'react-hook-form';
-
+import Button from '../Button/Button';
 import { yupResolver } from '@hookform/resolvers/yup';
 
 import * as yup from 'yup';
@@ -39,9 +39,9 @@ const FormImc = () => {
 				{errors.peso && <span className='imc-span'> A altura é obrigatória ! </span>}
 			</div>
 
-			<button className='calcular-button' type='Calcular'>
-				Calcular IMC
-			</button>
+			<div className='calcular-button'>
+				<Button type='Calcular'>Calcular IMC</Button>
+			</div>
 		</form>
 	);
 };

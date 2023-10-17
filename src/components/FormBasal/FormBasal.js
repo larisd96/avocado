@@ -1,8 +1,9 @@
 import './styles.css';
 import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-
 import * as yup from 'yup';
+import Button from '../Button/Button';
+
 
 const schema = yup.object().shape({
 	sexo: yup.string().required(),
@@ -71,9 +72,12 @@ const FormBasal = () => {
 				<label htmlFor='idade'>IDADE (anos):</label>
 				<Controller name='idade' control={control} defaultValue='' render={({ field }) => <input {...field} type='number' />} />
 				{errors.idade && <span className='basal-span'>A idade é obrigatória!</span>}
-				<button className='basal-button' type='submit'>
+				<div className='basal-button'>
+
+				<Button type='submit'>
 					Calcular TMB
-				</button>
+				</Button>
+				</div>
 			</form>
 		</div>
 	);

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Pagination from '../../components/Pagination/Pagination';
 import './styles.css';
+import Button from '../../components/Button/Button';
 
 const Blog = () => {
 	const navigate = useNavigate();
@@ -41,26 +42,22 @@ const Blog = () => {
 			<div className='container_blog'>
 				<div className='blog__wrapper'>
 					<div className='blog__header'>
-						<button onClick={() => navigate('/create')} className='blog-title'>
-							Criar nova publicação
-						</button>
+						<Button onClick={() => navigate('/create')}>Criar nova publicação</Button>
 					</div>
 
 					<div className='blog__posts'>
 						{error && <h4>{error.message}</h4>}
 
 						{currentPosts.map(post => (
-							<article className='blog__post' key={post.id}>
+							<article className='post_item' key={post.id}>
 								<h3>
 									{post.id} - {post.title}
 								</h3>
 								<p>{post.body}</p>
-								<button onClick={() => navigate(`/update/${post.id}`)} className='blog-title'>
-									Editar Publicação
-								</button>
-								<button onClick={() => navigate(`/delete/${post.id}`)} className='blog-title'>
-									Apagar Publicação
-								</button>
+								<div className='blog_btngroup'>
+									<Button onClick={() => navigate(`/update/${post.id}`)}>Editar Publicação</Button>
+									<Button onClick={() => navigate(`/delete/${post.id}`)}>Apagar Publicação</Button>
+								</div>
 							</article>
 						))}
 					</div>
