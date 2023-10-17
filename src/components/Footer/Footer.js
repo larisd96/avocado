@@ -19,9 +19,22 @@ const Footer = () => {
 						<img src='img/youtube-icon.png' alt='imagem' />
 					</a>
 				</div>
+				<div className='footer-face'>
+					<a href='https://www.facebook.com/?locale=pt_PT'>
+						<img src='img/facebook_icon.png' alt='imagem' />
+					</a>
+				</div>
+				<div className='footer-tiktok'>
+					<a href='https://www.tiktok.com/'>
+						<img src='img/tiktok_icon.png' alt='imagem' />
+					</a>
+				</div>
 			</div>
 			<div className='footer-content'>
 				<p>Caráter Informativo As informações disponibilizadas não substituem avaliação, diagnóstico, tratamento ou acompanhamento de profissionais.</p>
+			</div>
+			<div className='footer-copyright'>
+				<p>Copyright 2023 - Avocado - Todos os direitos reservados</p>
 			</div>
 		</div>
 	);

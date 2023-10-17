@@ -13,33 +13,41 @@
 
 .footer-container {
 	display: flex;
-	flex-direction: row;
+	align-self: baseline;
 	margin-top: 2rem;
 	flex-grow: 3rem;
+	gap: 2rem;
+	
 
 }
 
 .footer-inst {
 	display: flex;
-	background-color: hsl(0, 1%, 53%);
+	background-color:#EEF277;
 	height: 70px;
+	width: 70px;
 	align-items: center;
 	justify-content: center;
+	border-radius: 8px;
 }
 .footer-in {
 	display: flex;
-	background-color: hsl(210, 63%, 54%);
+	background-color: #EEF277;
 	height: 70px;
+	width: 70px;
 	align-items: center;
 	justify-content: center;
 	margin-left: -30;
+	border-radius: 8px;
 }
 .footer-you {
 	display: flex;
-	background-color: #d34242;
-	height: 71px;
+	background-color: #EEF277;
+	height: 70px;
+	width: 70px;
 	align-items: center;
 	justify-content: center;
+	border-radius: 8px;
 }
 
 .footer-content {
@@ -48,4 +56,29 @@
 
 	width: 140px;
 
+
+}
+
+.footer-face {
+	display: flex;
+	background-color: #EEF277;
+	height: 70px;
+	width: 70px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+}
+
+.footer-tiktok {
+	display: flex;
+	background-color: #EEF277;
+	height: 70px;
+	width: 70px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+}
+.footer-copyright {
+
+	
 }
