@@ -1,9 +1,11 @@
-import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Pagination from '../../components/Pagination/Pagination';
+import './styles.css';
 
 const Blog = () => {
+	const navigate = useNavigate();
 	const [posts, setPosts] = useState([]);
 	const [error, setError] = useState(null);
 
@@ -22,7 +24,7 @@ const Blog = () => {
 				}
 
 				const data = response.data;
-				const sortedData = data.sort((a, b) => b.id - a.id); 
+				const sortedData = data.sort((a, b) => b.id - a.id);
 				setPosts(sortedData);
 			} catch (error) {
 				setError(error);
@@ -36,12 +38,12 @@ const Blog = () => {
 
 	return (
 		<section id='blog' className='blog'>
-			<div className='container'>
+			<div className='container_blog'>
 				<div className='blog__wrapper'>
 					<div className='blog__header'>
-						<h2>
-							Aguarde <Link to={`/create`}>Publicação</Link>
-						</h2>
+						<button onClick={() => navigate('/create')} className='blog-title'>
+							Criar nova publicação
+						</button>
 					</div>
 
 					<div className='blog__posts'>
@@ -53,17 +55,16 @@ const Blog = () => {
 									{post.id} - {post.title}
 								</h3>
 								<p>{post.body}</p>
-								<Link to={`/update/${post.id}`} className='blog__btn update'>
-									Update
-								</Link>
-								<Link to={`/delete/${post.id}`} className='blog__btn delete'>
-									Delete
-								</Link>
+								<button onClick={() => navigate(`/update/${post.id}`)} className='blog-title'>
+									Editar Publicação
+								</button>
+								<button onClick={() => navigate(`/delete/${post.id}`)} className='blog-title'>
+									Apagar Publicação
+								</button>
 							</article>
 						))}
 					</div>
-
-					<Pagination totalPosts={posts.length} postsPerPage={postsPerPage} currentPage={currentPage} paginate={paginate} />
+					{posts.length > 4 && <Pagination totalPosts={posts.length} postsPerPage={postsPerPage} currentPage={currentPage} paginate={paginate} />}
 				</div>
 			</div>
 		</section>

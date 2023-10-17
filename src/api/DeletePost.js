@@ -33,7 +33,7 @@ const DeletePost = () => {
 			dispatch({ type: 'DELETE_POST', payload: id });
 
 			alert('post apagado');
-			navigate('/');
+			navigate('/blog');
 		} catch (error) {
 			console.error('Erro ao deletar post:', error);
 		}

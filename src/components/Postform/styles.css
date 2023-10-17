@@ -1,0 +1,26 @@
+.contacts {
+	display: flex;
+	border-radius: 1rem;
+	background-color: #f0f2ac;
+	width: 400px;
+	padding: 1rem;
+	margin-top: 2rem;
+	justify-content: center;
+}
+
+.contacts__input {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	align-items: center;
+}
+
+.form__btns {
+	border: none;
+	background-color: #EEF277;
+	border-radius: 1rem;
+	width: 100px;
+	height: 40px;
+    flex-grow: 1rem;
+}

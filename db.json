@@ -1,3 +1,19 @@
 {
-  "posts": []
+  "posts": [
+    {
+      "id": 1,
+      "title": "Componentes em React",
+      "body": "O bem-estar é um estado fundamental para uma vida plena e saudável. Ele abrange não apenas a ausência de doenças, mas também a sensação de felicidade, satisfação e equilíbrio em diferentes aspectos da nossa vida. O bem-estar é um conceito amplo e multifacetado que engloba aspectos físicos, mentais, emocionais e sociais. Neste texto, vamos explorar alguns dos principais componentes do bem-estar e discutir sua importância."
+    },
+    {
+      "id": 2,
+      "title": "bem-estar físico",
+      "body": "O bem-estar físico envolve cuidar do nosso corpo através de uma alimentação saudável, exercícios regulares, sono adequado e evitar comportamentos prejudiciais, como o tabagismo e o consumo excessivo de álcool. Manter um peso saudável, ter energia para as atividades diárias e estar em boas condições físicas são aspectos essenciais do bem-estar físico."
+    },
+    {
+      "id": 3,
+      "title": "bem-estar físico",
+      "body": "O bem-estar físico envolve cuidar do nosso corpo através de uma alimentação saudável, exercícios regulares, sono adequado e evitar comportamentos prejudiciais, como o tabagismo e o consumo excessivo de álcool. Manter um peso saudável, ter energia para as atividades diárias e estar em boas condições físicas são aspectos essenciais do bem-estar físico."
+    }
+  ]
 }

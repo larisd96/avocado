@@ -42,7 +42,7 @@ const UpdatePost = () => {
 			dispatch({ type: 'UPDATE_POST', payload: updatedPost });
 
 			alert('post atualizado');
-			navigate('/');
+			navigate('/blog');
 		} catch (error) {
 			console.error('Erro ao atualizar post:', error);
 		}

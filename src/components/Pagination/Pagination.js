@@ -1,5 +1,5 @@
+import './styles.css';
 const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
-	
 	const pageNumbers = [];
 
 	const totalPages = Math.ceil(totalPosts / postsPerPage);
@@ -9,14 +9,12 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
 		if (currentPage + 3 <= totalPages) {
 			pageNumbers.push('...');
 		}
-	}
-	else if (currentPage === totalPages) {
+	} else if (currentPage === totalPages) {
 		pageNumbers.push(currentPage - 2, currentPage - 1, currentPage);
 		if (currentPage - 3 >= 1) {
 			pageNumbers.unshift('...');
 		}
-	}
-	else {
+	} else {
 		pageNumbers.push(currentPage - 1, currentPage, currentPage + 1);
 		if (currentPage + 2 <= totalPages) {
 			pageNumbers.push('...');
@@ -36,21 +34,11 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
 	return (
 		<div className='pagination'>
 			<button onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>
-				Prev
+				Voltar
 			</button>
 
-			{pageNumbers.map((number, idx) =>
-				number === '...' ? (
-					<span key={`ellipsis-${idx}`}>...</span>
-				) : (
-					<button key={`page-${number}`} onClick={() => paginate(number)} className={currentPage === number ? 'active' : ''}>
-						{number}
-					</button>
-				),
-			)}
-
 			<button onClick={() => paginate(currentPage + 1)} disabled={currentPage === totalPages}>
-				Next
+				Próximo
 			</button>
 		</div>
 	);

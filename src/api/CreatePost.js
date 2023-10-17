@@ -20,7 +20,7 @@ const CreatePost = () => {
 			dispatch({ type: 'ADD_POST', payload: data });
 
 			alert('novo post criado');
-			navigate('/');
+			navigate('/blog');
 		} catch (error) {
 			console.error('Erro ao criar post:', error);
 		}

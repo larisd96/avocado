@@ -1,4 +1,4 @@
-
+import './styles.css';
 
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -14,7 +14,6 @@ const PostForm = ({ action, id, title, body, onTitleChange, onBodyChange, onSubm
 			return;
 		}
 
-	
 		let url = 'http://localhost:5000/posts';
 
 		if (action === 'update') {
@@ -24,7 +23,7 @@ const PostForm = ({ action, id, title, body, onTitleChange, onBodyChange, onSubm
 		try {
 			action === 'update' ? await axios.put(url, { title, body }) : await axios.post(url, { title, body });
 
-			navigate('/'); 
+			navigate('/blog');
 		} catch (error) {
 			console.error(`Failed to ${action} post.`, error);
 		}
@@ -49,7 +48,7 @@ const PostForm = ({ action, id, title, body, onTitleChange, onBodyChange, onSubm
 								<button className='form__btns' type='button' onClick={onSubmit}>
 									Excluir
 								</button>
-								<button className='form__btns' type='button' onClick={() => navigate('/')}>
+								<button className='form__btns' type='button' onClick={() => navigate('/blog')}>
 									Cancela
 								</button>
 							</>
@@ -58,7 +57,7 @@ const PostForm = ({ action, id, title, body, onTitleChange, onBodyChange, onSubm
 								<button className='form__btns' type='submeter'>
 									{action === 'update' ? 'Update' : 'Submeter'}
 								</button>
-								<button className='form__btns' type='button' onClick={() => navigate('/')}>
+								<button className='form__btns' type='button' onClick={() => navigate('/blog')}>
 									Cancela
 								</button>
 							</>
