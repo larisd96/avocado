@@ -8,7 +8,7 @@ const navbarItems = [
 	{ path: '/contato', name: 'Contato' },
 	{ path: '/blog', name: 'Blog' },
 ];
-// Map
+
 const Navbar = () => {
 	return (
 		<nav className='nav-bar'>

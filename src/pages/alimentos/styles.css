@@ -40,3 +40,14 @@
 	border-radius: 1rem;
 	margin-right: auto;
 }
+
+.food-container {
+	display: flex;
+	background-color: #dbf6db;
+	margin-top: 2rem;
+	align-self: center;
+	width: 1000px;
+	padding: 2rem;
+	font-size: 17px;
+	border-radius: 1rem;
+}

@@ -44,12 +44,7 @@ const Alimentos = () => {
 					Search
 				</button>
 			</div>
-			{loading ? (
-				<div>
-					<SyncLoader color='#36d7b7' />
-				</div>
-			) : (
-				<>
+			
 					{empty ? (
 						<div className='content-error'>
 							<p>Nenhum resultado foi encontrado ! </p>
@@ -68,8 +63,8 @@ const Alimentos = () => {
 							))}
 						</ul>
 					)}
-				</>
-			)}
+			
+	
 		</div>
 	);
 };

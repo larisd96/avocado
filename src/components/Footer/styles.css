@@ -50,15 +50,6 @@
 	border-radius: 8px;
 }
 
-.footer-content {
-	margin-top: 3rem;
-	font-size: 15px;
-
-	width: 140px;
-
-
-}
-
 .footer-face {
 	display: flex;
 	background-color: #EEF277;
@@ -78,7 +69,19 @@
 	justify-content: center;
 	border-radius: 8px;
 }
-.footer-copyright {
 
-	
+.footer-content {
+	margin-top: 3rem;
+	font-size: 15px;
+	width: 140px;
+
+
+}
+
+
+.footer-copyright {
+display: flex;
+flex-direction: column;
+align-items: center;	
+font-size: 13px;
 }
