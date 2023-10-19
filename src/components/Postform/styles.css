@@ -8,7 +8,7 @@
 	justify-content: center;
 }
 
-.contacts__input {
+.contacts-input {
 	display: flex;
 	flex-direction: column;
 	margin-top: 2rem;
@@ -16,7 +16,7 @@
 	align-items: center;
 }
 
-.form__btns {
+.form-btns {
 	display: flex;
 	gap: 8px;
 	align-self: center;

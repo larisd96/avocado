@@ -1,9 +1,9 @@
 import './styles.css';
+import React from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import Button from '../Button/Button';
-
 
 const schema = yup.object().shape({
 	sexo: yup.string().required(),
@@ -22,6 +22,8 @@ const FormBasal = () => {
 		resolver: yupResolver(schema),
 	});
 
+	const [tmbCalculada, setTmbCalculada] = React.useState(null);
+
 	const onSubmit = data => {
 		let tmbCalculada = 0;
 
@@ -31,12 +33,12 @@ const FormBasal = () => {
 			tmbCalculada = 447.593 + 9.247 * data.peso + 3.098 * data.altura - 4.33 * data.idade;
 		}
 
-		alert(`Sua TMB é: ${tmbCalculada.toFixed(2)} calorias por dia`);
+		setTmbCalculada(tmbCalculada.toFixed(2)); 
 		reset();
 	};
 
 	return (
-		<div className='basal-content'>
+		<div className='basal-container'>
 			<h1>Calculadora de TMB</h1>
 			<form onSubmit={handleSubmit(onSubmit)}>
 				<div>
@@ -48,36 +50,35 @@ const FormBasal = () => {
 						render={({ field }) => {
 							return (
 								<select className='basal-select' {...field}>
-									<option defaultValue disable='true'>
+									<option defaultValue disabled={true}>
 										Selecione
 									</option>
-									<option value='homem'> Homem</option>
+									<option value='homem'>Homem</option>
 									<option value='mulher'>Mulher</option>
 								</select>
 							);
 						}}
 					></Controller>
-					
 				</div>
-				<div>
+				<div className='basal-input'>
 					<label htmlFor='peso'>PESO (kg):</label>
 					<Controller name='peso' control={control} defaultValue='' render={({ field }) => <input {...field} type='number' />} />
 					{errors.peso && <span className='basal-span'>O peso é obrigatório!</span>}
 				</div>
-				<div>
+				<div className='basal-input'>
 					<label htmlFor='altura'>ALTURA(cm):</label>
 					<Controller name='altura' control={control} defaultValue='' render={({ field }) => <input {...field} type='number' />} />
 					{errors.altura && <span className='basal-span'>A altura é obrigatória!</span>}
 				</div>
-				<label htmlFor='idade'>IDADE (anos):</label>
-				<Controller name='idade' control={control} defaultValue='' render={({ field }) => <input {...field} type='number' />} />
-				{errors.idade && <span className='basal-span'>A idade é obrigatória!</span>}
-				<div className='basal-button'>
-
-				<Button type='submit'>
-					Calcular TMB
-				</Button>
+				<div className='basal-input'>
+					<label htmlFor='idade'>IDADE (anos):</label>
+					<Controller name='idade' control={control} defaultValue='' render={({ field }) => <input {...field} type='number' />} />
+					{errors.idade && <span className='basal-span'>A idade é obrigatória!</span>}
 				</div>
+				<div className='basal-button'>
+					<Button type='submit'>Calcular TMB</Button>
+				</div>
+				<div className='basal-result'>{tmbCalculada !== null && <p>Sua Taxa Metabólica Basal é: {tmbCalculada} calorias por dia</p>}</div>
 			</form>
 		</div>
 	);

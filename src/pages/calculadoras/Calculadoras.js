@@ -7,13 +7,13 @@ const Calculadoras = () => {
 			<div className='calculator-about-imc'>
 				<h1>Calcule seu IMC</h1>
 				<p className='calculator-imc'>
-					O IMC é uma medida comum usada para avaliar se uma pessoa está em um peso saudável. Uma calculadora de IMC permitiria aos usuários inserir sua altura e peso e receber uma classificação que
+					O IMC é uma medida comum usada para avaliar se uma pessoa está em um peso saudável. Uma calculadora de IMC permite aos usuários inserir sua altura e peso e receber uma classificação que
 					indica se estão abaixo do peso, com peso saudável, com sobrepeso ou obesos.
 				</p>
 			</div>
 
 			<div className='calculator-imc-container'>
-				<img className='photo-fitness' src='/img/personal.svg' alt='Personal' />
+				<img className='calculator-photo-fitness' src='/img/personal.svg' alt='Personal' />
 				<FormImc />
 			</div>
 			<div className='calculator-basal'>
@@ -40,7 +40,7 @@ const Calculadoras = () => {
 				</div>
 
 				<div className='calculator-basal-container'>
-					<img className='photo-halter' src='/img/halter-fitness.png' alt='' />
+					<img className='calculator-photo-halter' src='/img/halter-fitness.png' alt='' />
 					<FormBasal />
 				</div>
 			</div>

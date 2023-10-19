@@ -36,12 +36,20 @@
 .post-item {
 	display: flex;
 	flex-direction: column;
-	margin: 1rem;
+	margin: 2rem;
+	border: 1px solid;
+	padding: 2rem;
+}
+
+
+.post-paragraph {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 .blog-btngroup {
 display: flex;
 gap: 8px;
 align-self: center;
-margin-top: 1rem;
+margin-top: 2rem;
 }

@@ -35,24 +35,24 @@ const PostForm = ({ action, id, title, body, onTitleChange, onBodyChange, onSubm
 			<div className='contacts__wrapper'>
 				<form onSubmit={handleSubmit} className='contacts__form'>
 					<h3> {action === 'update' ? 'Update Post' : action === 'delete' ? 'Deletar Post' : 'Escreva uma publicação'}</h3>
-					<div className='contacts__input'>
+					<div className='contacts-input'>
 						<label placeholder='Título'>Título</label>
 						<input type='text' value={title} onChange={e => onTitleChange(e.target.value)} required />
 					</div>
-					<div className='contacts__input'>
+					<div className='contacts-input'>
 						<label>Escreva o texto</label>
 						<textarea value={body} onChange={e => onBodyChange(e.target.value)} required />
 					</div>
-					<div className='contacts__input'>
+					<div className='contacts-input'>
 						{action === 'delete' ? (
-							<div className='form__btns'>
+							<div className='form-btns'>
 								<Button type='button' onClick={onSubmit}>
 									Excluir
 								</Button>
 								<Button onClick={() => navigate('/blog')}>Cancela</Button>
 							</div>
 						) : (
-							<div className='form__btns'>
+							<div className='form-btns'>
 								<Button>{action === 'update' ? 'Update' : 'Submeter'}</Button>
 								<Button onClick={() => navigate('/blog')}>Cancela</Button>
 							</div>

@@ -4,6 +4,7 @@ import Button from '../Button/Button';
 import { yupResolver } from '@hookform/resolvers/yup';
 
 import * as yup from 'yup';
+import { useState } from 'react';
 
 const schema = yup.object().shape({
 	peso: yup.number().required(),
@@ -14,14 +15,15 @@ const FormImc = () => {
 	const {
 		handleSubmit,
 		control,
-		watch,
 		formState: { errors },
 	} = useForm({ resolver: yupResolver(schema) });
+
+	const [imcResult, setImcResult] = useState(null);
 
 	const onSubmit = data => {
 		const alturaMetros = data.altura / 100;
 		const imc = (data.peso / (alturaMetros * alturaMetros)).toFixed(2);
-		alert(`Seu Imc é ${imc}`);
+		setImcResult(imc);
 	};
 
 	return (
@@ -30,18 +32,20 @@ const FormImc = () => {
 			<div>
 				<label htmlFor='peso'>PESO (kg):</label>
 				<Controller name='peso' control={control} defaultValue='' render={({ field }) => <input {...field} type='number'></input>}></Controller>
-				{errors.altura && <span className='imc-span'> O peso é obrigartório ! </span>}
+				{errors.peso && <span className='imc-span'>O peso é obrigatório!</span>}
 			</div>
 
 			<div>
 				<label htmlFor='altura'>ALTURA (cm):</label>
 				<Controller name='altura' control={control} defaultValue='' render={({ field }) => <input {...field} type='number'></input>}></Controller>
-				{errors.peso && <span className='imc-span'> A altura é obrigatória ! </span>}
+				{errors.altura && <span className='imc-span'>A altura é obrigatória!</span>}
 			</div>
 
 			<div className='calcular-button'>
-				<Button type='Calcular'>Calcular IMC</Button>
+				<Button type='submit'>Calcular IMC</Button>
 			</div>
+
+			<div className='imc-result'>{imcResult !== null && <p>Seu IMC é: {imcResult}</p>}</div>
 		</form>
 	);
 };

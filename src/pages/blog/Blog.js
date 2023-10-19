@@ -50,10 +50,10 @@ const Blog = () => {
 
 						{currentPosts.map(post => (
 							<article className='post-item' key={post.id}>
-								<h3>
+								<h3 className='post-title'>
 									{post.id} - {post.title}
 								</h3>
-								<p>{post.body}</p>
+								<p className='post-paragraph'>{post.body}</p>
 								<div className='blog-btngroup'>
 									<Button onClick={() => navigate(`/update/${post.id}`)}>Editar Publicação</Button>
 									<Button onClick={() => navigate(`/delete/${post.id}`)}>Apagar Publicação</Button>

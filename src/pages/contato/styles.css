@@ -1,11 +1,17 @@
 .contact-container {
-  display: flex;
-  justify-content: space-evenly;
+	display: flex;
+	flex-direction: column;
+	margin: 2rem;
+}
+
+.contact-form-box {
+	display: flex;
+  align-self: center;
 }
 
 .photo-contact {
-    height: 450px;
-  margin-top: 7rem;
-  
-}
+	
+  height: 500px;
 
+	margin-top: 3rem;
+}
