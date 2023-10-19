@@ -24,3 +24,25 @@
 	justify-content: center;
 	font-weight: 200;
 }
+
+@media screen and (max-width: 900px) {
+.banner-title {
+	font-size: 24px;
+}
+.banner-about {
+	font-size: 1rem;
+}
+
+}
+
+
+@media screen and (max-width: 540px) {
+.banner-box {
+flex-direction: column;
+
+}
+.banner-photo-salad {
+
+	align-self: center;
+}
+}

@@ -6,9 +6,22 @@
 	box-sizing: content-box;
 	margin-bottom: 1rem;
 	box-shadow: 0px 4px 7px 4px #bad8ba;
-	width: 100%;
+	padding: 1rem;
+	
 }
 
 .header-children {
+display: flex;
 	margin-left: auto;
+}
+
+@media screen and (max-width: 900px) {
+.header{
+	flex-direction: column;
+	height: inherit;
+
+}
+.header-children {
+	margin-left: 0;
+}
 }

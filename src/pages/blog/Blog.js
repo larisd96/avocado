@@ -50,7 +50,7 @@ const Blog = () => {
 
 						{currentPosts.map(post => (
 							<article className='post-item' key={post.id}>
-								<h3 className='post-title'>
+								<h3>
 									{post.id} - {post.title}
 								</h3>
 								<p className='post-paragraph'>{post.body}</p>

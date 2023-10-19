@@ -1,7 +1,7 @@
 .nav-bar {
 	display: flex;
 	justify-content:space-between;
-	margin-left: 23rem;
+
 	
  	
 }
@@ -10,4 +10,12 @@
 	text-decoration: none;
 	margin: 2rem;
 	color: black;
+}
+
+@media screen and (max-width: 900px) {
+.nav-bar-item {
+	margin: 8px;
+	
+}
+
 }

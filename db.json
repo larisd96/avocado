@@ -1,9 +1,9 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "Componentes em React",
-      "body": "O bem-estar é um estado fundamental para uma vida plena e saudável. Ele abrange não apenas a ausência de doenças, mas também a sensação de felicidade, satisfação e equilíbrio em diferentes aspectos da nossa vida. O bem-estar é um conceito amplo e multifacetado que engloba aspectos físicos, mentais, emocionais e sociais. Neste texto, vamos explorar alguns dos principais componentes do bem-estar e discutir sua importância."
+      "title": "Bem Estar",
+      "body": "O bem-estar é um estado fundamental para uma vida plena e saudável. Ele abrange não apenas a ausência de doenças, mas também a sensação de felicidade, satisfação e equilíbrio em diferentes aspectos da nossa vida. O bem-estar é um conceito amplo e multifacetado que engloba aspectos físicos, mentais, emocionais e sociais. Neste texto, vamos explorar alguns dos principais componentes do bem-estar e discutir sua importância.",
+      "id": 1
     },
     {
       "id": 2,
@@ -19,6 +19,16 @@
       "title": "Bem-estar social:",
       "body": "O bem-estar social diz respeito ao nosso relacionamento com os outros e à nossa integração na sociedade. Ter uma rede de apoio, amigos e familiares em quem podemos confiar é essencial para o bem-estar social. Além disso, contribuir para a comunidade, participar de atividades sociais e se envolver em ações de solidariedade podem aumentar nossa sensação de pertencimento e significado.",
       "id": 4
+    },
+    {
+      "title": "Descobrindo a Serenidade: A Jornada da Meditação",
+      "body": "A meditação é uma prática antiga que busca acalmar a mente, promover a atenção plena e melhorar o bem-estar. Ela oferece benefícios como redução do estresse, aumento da concentração e fortalecimento do sistema imunológico, tornando-a uma ferramenta valiosa para a saúde mental e emocional. Qualquer pessoa pode começar com apenas alguns minutos de meditação diária, ajudando a cultivar a paz interior e a clareza mental.",
+      "id": 5
+    },
+    {
+      "title": "Tai Chi Chuan: Equilíbrio para o Corpo e a Mente",
+      "body": "Tai Chi Chuan é uma antiga arte marcial chinesa que combina movimentos graciosos com concentração e equilíbrio. Promove benefícios físicos, como equilíbrio e flexibilidade, e benefícios mentais, como redução do estresse e clareza mental. É uma prática holística que visa o bem-estar total.",
+      "id": 6
     }
   ],
   "contacts": [
