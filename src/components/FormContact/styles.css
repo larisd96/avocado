@@ -8,7 +8,6 @@
 
 	background-color: #f0f2ac;
 	border-radius: 1rem;
-
 }
 .form-contact {
 	display: flex;
@@ -27,6 +26,7 @@ input {
 }
 
 textarea {
+	padding: 5px;
 	height: 200px;
 	width: 300px;
 	border: none;
@@ -46,4 +46,28 @@ span {
 	font-size: 13px;
 	position: absolute;
 	margin-top: 25px;
+}
+
+@media screen and (max-width: 1220px) {
+	.contact-content {
+		height: 570px;
+		width: 328px;
+	}
+}
+
+@media screen and (max-width: 890px) {
+	.contact-content {
+		height: 454px;
+		width: 282px;
+	}
+	.contact-textarea {
+		height: 87px;
+		width: 230px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.contact-content {
+		align-self: center;
+	}
 }

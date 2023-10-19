@@ -23,7 +23,7 @@ const cardItems = [
 const Home = () => {
 	return (
 		
-		<div>
+		<div className='home-container'>
 			<Banner />
 			<h1 className='home-title'>Aqui estão alguns dos principais recursos e informações que esse site pode te oferecer:</h1>
 			<div className='home-box-card'>

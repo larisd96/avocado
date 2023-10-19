@@ -12,6 +12,7 @@
 	background-size: cover;
 	background: url('../../../public/img/prato-de-tigela.jpg');
 	opacity: 70%;
+	padding: 1rem;
 }
 .search-text {
 	background-color: #ffff;
@@ -27,6 +28,7 @@
 	border: none;
 	border-radius: 1rem;
 	cursor: pointer;
+	padding: 0.5rem;
 }
 
 .food-details {
@@ -69,4 +71,21 @@
 	padding: 2rem;
 	gap: 1rem;
 	flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+	.food-detail-photo {
+		width: 150px;
+		height: 120px;
+	}
+	.food-details {
+		flex-direction: column;
+		gap: 6px; 
+		align-self: center
+		;
+	}
+
+	.food-card {
+		width: 100%;
+	}
 }

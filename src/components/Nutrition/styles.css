@@ -18,3 +18,14 @@
 .api-label {
 	font-size: 1.4rem;
 }
+
+
+@media screen and (max-width: 800px) {
+	.nutri-content-values {
+		height: auto;
+		width: 150px;
+		font-size: 10px;
+		gap: 3px;
+	
+	}
+}

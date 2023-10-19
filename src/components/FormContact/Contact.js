@@ -57,7 +57,7 @@ const Contact = () => {
 			<label className='form-contact'>
 				Mensagem:
 				<span>{errors.message?.message}</span>
-				<textarea {...register('message', { required: true })} />
+				<textarea className='contact-textarea' {...register('message', { required: true })} />
 			</label>
 
 			<Button>Enviar</Button>

@@ -2,24 +2,19 @@
 	display: flex;
 	flex-direction: column;
 	margin-top: 2rem;
-	align-self: center;
-	
 }
 
 .calculator-about-imc {
 	margin-top: 2rem;
-	background-color: #DBF6DB;
+	background-color: #dbf6db;
 	padding: 2rem;
-	width: 1200px;
 	border-radius: 1rem;
-	
 }
 
 .calculator-imc-container {
 	display: flex;
 	justify-content: space-evenly;
 	margin: 5rem;
-	
 }
 
 .calculator-photo-fitness {
@@ -31,12 +26,9 @@
 }
 .calculator-about-basal {
 	margin-top: 2rem;
-	background-color: #DBF6DB;
+	background-color: #dbf6db;
 	padding: 2rem;
-	width: 1200px;
-	align-self: center;
 	border-radius: 1rem;
-	
 }
 .calculator-basal-paragraph1 {
 	display: flex;
@@ -49,10 +41,24 @@
 	display: flex;
 	justify-content: space-evenly;
 	margin: 5rem;
-
 }
 
 .calculator-photo-halter {
 	height: 400px;
-	
+}
+
+@media screen and (max-width: 790px) {
+	.calculator-imc-container {
+		flex-direction: column;
+		margin: 1rem;
+	}
+
+	.calculator-basal-container {
+		flex-direction: column;
+		margin: 1rem;
+	}
+
+	.calculator-photo-halter {
+		height: 300px;
+	}
 }

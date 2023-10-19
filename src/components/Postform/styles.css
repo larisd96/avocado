@@ -2,7 +2,7 @@
 	display: flex;
 	border-radius: 1rem;
 	background-color: #f0f2ac;
-	width: 400px;
+	max-width: 400px;
 	padding: 1rem;
 	margin-top: 2rem;
 	justify-content: center;
