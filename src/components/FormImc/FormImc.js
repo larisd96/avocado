@@ -25,7 +25,7 @@ const FormImc = () => {
 	};
 
 	return (
-		<form className='calculator' onSubmit={handleSubmit(onSubmit)}>
+		<form className='calculator-container-imc' onSubmit={handleSubmit(onSubmit)}>
 			<h1 className='calculator-title '>Calculadora IMC</h1>
 			<div>
 				<label htmlFor='peso'>PESO (kg):</label>

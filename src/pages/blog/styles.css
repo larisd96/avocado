@@ -1,4 +1,4 @@
-.container_blog {
+.container-blog {
 	display: flex;
 	background-color: #f0f2ac;
 	flex-direction: column;
@@ -7,20 +7,20 @@
 	align-items: center;
 }
 
-.blog__wrapper {
+.blog-wrapper {
 	display: flex;
 
 	flex-direction: column;
 }
 
-.blog__header {
+.blog-header {
 	display: flex;
 	flex-direction: row;
 	flex-grow: 1rem;
 	padding: 1rem;
 }
 
-.blog__posts {
+.blog-posts {
 	display: flex;
 	flex-direction: column;
 	background-color: #ffff;
@@ -33,13 +33,13 @@
 	margin-bottom: 2rem;
 }
 
-.post_item {
+.post-item {
 	display: flex;
 	flex-direction: column;
 	margin: 1rem;
 }
 
-.blog_btngroup {
+.blog-btngroup {
 display: flex;
 gap: 8px;
 align-self: center;

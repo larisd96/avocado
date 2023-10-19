@@ -1,7 +1,7 @@
 import './styles.css';
 const Banner = () => {
 	return (
-		<div className='box'>
+		<div className='banner-box'>
 			<div className='banner-group-text'>
 				<h1 className='banner-title'> Mantenha-se Saudável & Conquiste seus Objetivos com a Nutrição Certa !</h1>
 				<h2 className='banner-about'>
@@ -10,7 +10,7 @@ const Banner = () => {
 				</h2>
 			</div>
 
-			<img className='photo-salad' src='/img/salad-pepino.png' alt='Salada' />
+			<img className='banner-photo-salad' src='/img/salad-pepino.png' alt='Salada' />
 		</div>
 	);
 };

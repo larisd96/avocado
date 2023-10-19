@@ -1,4 +1,4 @@
-.box {
+.banner-box {
 	display: flex;
 	justify-content: space-around;
 	margin-top: 175px;
@@ -9,7 +9,7 @@
 	margin-bottom: 6rem;
 }
 
-.photo-salad {
+.banner-photo-salad {
 	width: 45%;
 	align-items: center;
 }

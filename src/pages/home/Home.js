@@ -26,7 +26,7 @@ const Home = () => {
 		<div>
 			<Banner />
 			<h1 className='home-title'>Aqui estão alguns dos principais recursos e informações que esse site poderia oferecer:</h1>
-			<div className='box-card'>
+			<div className='home-box-card'>
 				{cardItems.map(item => (
 					<Card key={item.cardHeader} image={item.image} cardHeader={item.cardHeader} text={item.text} />
 				))}

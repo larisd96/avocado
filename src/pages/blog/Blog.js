@@ -39,22 +39,22 @@ const Blog = () => {
 
 	return (
 		<section id='blog' className='blog'>
-			<div className='container_blog'>
-				<div className='blog__wrapper'>
-					<div className='blog__header'>
+			<div className='container-blog'>
+				<div className='blog-wrapper'>
+					<div className='blog-header'>
 						<Button onClick={() => navigate('/create')}>Criar nova publicação</Button>
 					</div>
 
-					<div className='blog__posts'>
+					<div className='blog-posts'>
 						{error && <h4>{error.message}</h4>}
 
 						{currentPosts.map(post => (
-							<article className='post_item' key={post.id}>
+							<article className='post-item' key={post.id}>
 								<h3>
 									{post.id} - {post.title}
 								</h3>
 								<p>{post.body}</p>
-								<div className='blog_btngroup'>
+								<div className='blog-btngroup'>
 									<Button onClick={() => navigate(`/update/${post.id}`)}>Editar Publicação</Button>
 									<Button onClick={() => navigate(`/delete/${post.id}`)}>Apagar Publicação</Button>
 								</div>
