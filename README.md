@@ -1,5 +1,5 @@
 # Avocado
- A aplicação foi desenvolvido para gerenciar a saúde do usuário, atravez d
+ A aplicação foi desenvolvida para gerenciar a saúde do usuário, através das ferramentas como calculadora de IMC (índice de Massa Corporal)e TBM (Taxa Basal Metabólica), além disso, dispõe de uma barra de pesquisa que obtêm informações nutricionais, uma página de um blog para criar artigos e uma página de contactos com formulário.
 
 ## Como correr a aplicação 
 
