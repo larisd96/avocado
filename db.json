@@ -29,6 +29,11 @@
       "title": "Tai Chi Chuan: Equilíbrio para o Corpo e a Mente",
       "body": "Tai Chi Chuan é uma antiga arte marcial chinesa que combina movimentos graciosos com concentração e equilíbrio. Promove benefícios físicos, como equilíbrio e flexibilidade, e benefícios mentais, como redução do estresse e clareza mental. É uma prática holística que visa o bem-estar total.",
       "id": 6
+    },
+    {
+      "title": "yoga",
+      "body": "A yoga é uma antiga prática que combina posturas físicas, respiração consciente e meditação para promover equilíbrio, flexibilidade e bem-estar mental. Além de fortalecer o corpo, a yoga ajuda a aliviar o estresse, melhorar a concentração e cultivar uma sensação de paz interior. É uma jornada de autodescoberta que beneficia tanto o corpo como a mente, proporcionando um equilíbrio saudável em nossa vida agitada.",
+      "id": 7
     }
   ],
   "contacts": [
@@ -104,6 +109,13 @@
       "phone": "938179444",
       "message": "ola ola ola",
       "id": 10
+    },
+    {
+      "name": "Larissa De Sousa",
+      "email": "larissa.sousa.lds@gmail.com",
+      "phone": "938179444",
+      "message": "ol ",
+      "id": 11
     }
   ]
 }
