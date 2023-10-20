@@ -31,14 +31,14 @@ const FormImc = () => {
 			<h1 className='calculator-title '>Calculadora IMC</h1>
 			<div>
 				<label htmlFor='peso'>PESO (kg):</label>
-				<Controller name='peso' control={control} defaultValue='' render={({ field }) => <input {...field} type='number'></input>}></Controller>
-				{errors.peso && <span className='imc-span'>O peso é obrigatório!</span>}
+				<Controller name='peso' control={control} defaultValue='' render={({ field }) => <input {...field} type='number' />}></Controller>
+				{errors.peso && <span className='imc-span-error'>O peso é obrigatório!</span>}
 			</div>
 
 			<div>
 				<label htmlFor='altura'>ALTURA (cm):</label>
-				<Controller name='altura' control={control} defaultValue='' render={({ field }) => <input {...field} type='number'></input>}></Controller>
-				{errors.altura && <span className='imc-span'>A altura é obrigatória!</span>}
+				<Controller name='altura' control={control} defaultValue='' render={({ field }) => <input {...field} type='number' />}></Controller>
+				{errors.altura && <span className='imc-span-error'>A altura é obrigatória!</span>}
 			</div>
 
 			<div className='calcular-button'>

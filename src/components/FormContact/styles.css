@@ -41,12 +41,6 @@ textarea {
 	cursor: pointer;
 }
 
-span {
-	color: rgb(244, 9, 9);
-	font-size: 13px;
-	position: absolute;
-	margin-top: 25px;
-}
 
 @media screen and (max-width: 1220px) {
 	.contact-content {

@@ -30,8 +30,8 @@ background-color: #F2BC79;;
 	
 }
 
-.basal-span {
-	display: flex;
+.basal-span-error {
 	padding: 3px;
-	margin-top: -22px;
+	color: rgb(244, 9, 9);
+	font-size: 13px;
 }

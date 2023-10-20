@@ -19,10 +19,12 @@ const Calculadoras = () => {
 			<div className='calculator-basal'>
 				<div className='calculator-about-basal'>
 					<h1>Calcule sua Taxa Metabolica Basal</h1>
-					<p className='calculator-basal-paragraph1'>
-						A taxa basal (ou taxa metabólica basal - TMB) é a quantidade mínima de energia que o corpo humano precisa para manter suas funções vitais em repouso, como manter a temperatura corporal, a
-						função cerebral, a respiração, a circulação sanguínea e outras funções essenciais. A TMB é medida em calorias por dia e pode variar de pessoa para pessoa, dependendo de diversos fatores,
-						incluindo idade, sexo, composição corporal e níveis de atividade física.
+					<article>
+						<p className='calculator-basal-paragraph1'>
+							A taxa basal (ou taxa metabólica basal - TMB) é a quantidade mínima de energia que o corpo humano precisa para manter suas funções vitais em repouso, como manter a temperatura corporal,
+							a função cerebral, a respiração, a circulação sanguínea e outras funções essenciais. A TMB é medida em calorias por dia e pode variar de pessoa para pessoa, dependendo de diversos
+							fatores, incluindo idade, sexo, composição corporal e níveis de atividade física.
+						</p>
 						<p className='calculator-basal-paragraph1'>
 							Geralmente, a TMB é responsável pela maior parte das calorias que uma pessoa queima ao longo do dia, representando cerca de 60% a 75% do gasto calórico total diário. Para calcular a TMB,
 							podem ser usadas várias fórmulas, sendo uma das mais conhecidas a Equação de Harris-Benedict. Essa fórmula considera informações como o sexo, a idade, o peso e a altura da pessoa.Aqui
@@ -36,7 +38,7 @@ const Calculadoras = () => {
 							individual e saúde geral, também podem influenciar o gasto calórico de uma pessoa. Portanto, é importante consultar um profissional de saúde ou nutricionista para obter uma estimativa
 							precisa e personalizada das necessidades calóricas.
 						</p>
-					</p>
+					</article>
 				</div>
 
 				<div className='calculator-basal-container'>

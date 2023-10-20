@@ -47,10 +47,10 @@ const FormBasal = () => {
 						name='sexo'
 						control={control}
 						defaultValue=''
-						render={({ field }) => {
+						render={({ field, register }) => {
 							return (
 								<select className='basal-select' {...field}>
-									<option defaultValue disabled={true}>
+									<option value='' defaultValue>
 										Selecione
 									</option>
 									<option value='homem'>Homem</option>
@@ -63,17 +63,17 @@ const FormBasal = () => {
 				<div className='basal-input'>
 					<label htmlFor='peso'>PESO (kg):</label>
 					<Controller name='peso' control={control} defaultValue='' render={({ field }) => <input {...field} type='number' />} />
-					{errors.peso && <span className='basal-span'>O peso é obrigatório!</span>}
+					{errors.peso && <span className='basal-span-error'>O peso é obrigatório!</span>}
 				</div>
 				<div className='basal-input'>
 					<label htmlFor='altura'>ALTURA(cm):</label>
 					<Controller name='altura' control={control} defaultValue='' render={({ field }) => <input {...field} type='number' />} />
-					{errors.altura && <span className='basal-span'>A altura é obrigatória!</span>}
+					{errors.altura && <span className='basal-span-error'>A altura é obrigatória!</span>}
 				</div>
 				<div className='basal-input'>
 					<label htmlFor='idade'>IDADE (anos):</label>
 					<Controller name='idade' control={control} defaultValue='' render={({ field }) => <input {...field} type='number' />} />
-					{errors.idade && <span className='basal-span'>A idade é obrigatória!</span>}
+					{errors.idade && <span className='basal-span-error'>A idade é obrigatória!</span>}
 				</div>
 				<div className='basal-button'>
 					<Button type='submit'>Calcular TMB</Button>

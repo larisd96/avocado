@@ -12,7 +12,6 @@
 }
 
 .calculator-title {
-
 	font-weight: bold;
 }
 .calcular-button {
@@ -21,10 +20,9 @@
 }
 .imc-result {
 	background-color: #f2bc79;
-
 }
-.imc-span {
-	display: flex;
+.imc-span-error {
 	padding: 3px;
-	margin-top: -20px;
+	color: rgb(244, 9, 9);
+	font-size: 13px;
 }
